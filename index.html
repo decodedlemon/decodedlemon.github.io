@@ -7,99 +7,224 @@
     <link rel="stylesheet" href="css/modern.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container">
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
             <a href="/" class="brand">
-                <img src="img/banner_logo.PNG" alt="Decoded Lemon Logo">
+                <img src="img/banner_logo.PNG" alt="Decoded Lemon">
             </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#projects">Projects</a>
-                <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+            <div class="nav-links" id="nav-links">
+                <a href="#expertise">Services</a>
+                <a href="#projects">Work</a>
+                <a href="mailto:info@decoded.ltd" class="nav-contact">Get in Touch</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
 
+    <!-- Hero -->
     <header class="hero">
-        <div class="container">
-            <h1>Decoded <span>Lemon</span></h1>
-            <p>We bring you services that help your business be efficient and effective anywhere, with or without the confines of a building.</p>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Software Development Studio
+                </div>
+                <h1 class="hero-title">
+                    We build software<br>
+                    that <mark>just works.</mark>
+                </h1>
+                <p class="hero-subtitle">
+                    Mobile apps, web platforms, and digital strategy for businesses ready to move fast without breaking things.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">View Our Work</a>
+                    <a href="mailto:info@decoded.ltd" class="btn btn-ghost">Start a Project &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
         </div>
     </header>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="section" style="background: var(--section-alt);">
+    <!-- Stats Bar -->
+    <div class="stats-bar">
         <div class="container">
-            <h2 class="section-title">Our Expertise</h2>
-            <div class="expertise-grid">
-                
-                <div class="expertise-card">
-                    <div class="expertise-icon">📱</div>
+            <div class="stats-row">
+                <div class="stat">
+                    <strong>5+</strong>
+                    <span>Years Experience</span>
+                </div>
+                <div class="stat-sep" aria-hidden="true"></div>
+                <div class="stat">
+                    <strong>20+</strong>
+                    <span>Projects Shipped</span>
+                </div>
+                <div class="stat-sep" aria-hidden="true"></div>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Client Satisfaction</span>
+                </div>
+                <div class="stat-sep" aria-hidden="true"></div>
+                <div class="stat">
+                    <strong>2</strong>
+                    <span>Continents Served</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="expertise" class="section">
+        <div class="container">
+            <header class="section-header reveal">
+                <span class="eyebrow">What We Do</span>
+                <h2>Built for scale.<br>Designed to delight.</h2>
+                <p>End-to-end digital solutions — from early concept through launch and long-term support.</p>
+            </header>
+            <div class="services-grid">
+
+                <div class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <span class="service-num">01</span>
                     <h3>Mobile Applications</h3>
-                    <p>Deeper integration with notifications, bluetooth, and GPS for a more powerful user experience.</p>
+                    <p>Native-quality experiences leveraging notifications, Bluetooth, GPS, and deep platform integrations on iOS and Android.</p>
                 </div>
 
-                <div class="expertise-card">
-                    <div class="expertise-icon">🌐</div>
+                <div class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <span class="service-num">02</span>
                     <h3>Web Applications</h3>
-                    <p>High-performance software that runs seamlessly in any web browser across all devices.</p>
+                    <p>High-performance platforms built for the modern web — fast, accessible, and maintainable at any scale.</p>
                 </div>
 
-                <div class="expertise-card">
-                    <div class="expertise-icon">💡</div>
-                    <h3>Technology Consultation</h3>
-                    <p>Strategic insights and expertise to help your company compete and thrive in a digital-first world.</p>
+                <div class="service-card reveal">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <span class="service-num">03</span>
+                    <h3>Technology Consulting</h3>
+                    <p>Strategic guidance to help your team choose the right architecture, tools, and roadmap to compete in a digital-first world.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <main id="projects" class="section">
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <header class="section-header reveal">
+                <span class="eyebrow">Our Work</span>
+                <h2>Products we've<br>designed and shipped.</h2>
+                <p>A selection of projects built from scratch — concept, design, engineering, and delivery.</p>
+            </header>
             <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('img/1.jpg');"></div>
-                    <div class="project-content">
-                        <h3>ChoreEquity</h3>
-                        <p>A modern, real-time mobile app designed to eliminate relationship friction by bringing radical transparency and fairness to household labor.</p>
-                        <a href="chore-equity.html" class="btn">View Project Case Study</a>
+
+                <article class="project-card reveal">
+                    <div class="project-img-wrap">
+                        <div class="project-img" style="background-image: url('assets/chore-equity/icon.png');" role="img" aria-label="ChoreEquity app icon"></div>
                     </div>
-                </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                        <h3>ChoreEquity</h3>
+                        <p>A real-time mobile app that brings radical transparency and fairness to household labor — making contributions visible and eliminating relationship friction.</p>
+                        <a href="chore-equity.html" class="project-link">
+                            View Case Study
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-img-wrap">
+                        <div class="project-img" style="background-image: url('assets/schola/schola-logo_512.png'); background-size: contain; background-repeat: no-repeat; background-position: center; padding: 2rem; background-color: #0f2a00;" role="img" aria-label="Schola app logo"></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Real-time Sync</span>
+                        </div>
+                        <h3>Schola</h3>
+                        <p>A digital classroom companion that connects teachers, students, and parents — making homework management effortless and keeping everyone aligned.</p>
+                        <a href="schola.html" class="project-link">
+                            View Case Study
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </article>
 
             </div>
         </div>
-    </main>
+    </section>
 
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="container">
+            <div class="cta-inner reveal">
+                <h2>Ready to build<br>something great?</h2>
+                <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+                <a href="mailto:info@decoded.ltd" class="btn btn-primary btn-lg">Let's Talk &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="img/banner_logo.PNG" alt="Decoded Lemon Logo">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/"><img src="img/banner_logo.PNG" alt="Decoded Lemon"></a>
+                    <p>Software development studio crafting products for the modern web and mobile era.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="https://www.instagram.com/decodedlemon">Instagram</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#expertise">Services</a>
+                    <a href="#projects">Work</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/decodedlemon" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="mailto:info@decoded.ltd">Email</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
                     <a href="chore-equity-terms.html">ChoreEquity Terms</a>
+                    <a href="schola-terms.html">Schola Terms</a>
                 </div>
-                <div class="footer-contact">
-                    <p>info@decoded.ltd</p>
-                    <p>+27 75 328 1424</p>
-                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Decoded Lemon. All rights reserved.</p>
+                <p class="footer-contact">info@decoded.ltd &middot; +27 75 328 1424</p>
             </div>
         </div>
     </footer>
 
     <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
