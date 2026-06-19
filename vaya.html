@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaya — Decoded Lemon</title>
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/vaya.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="/" class="brand">
+                <img src="img/banner_logo.PNG" alt="Decoded Lemon">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="/#expertise">Services</a>
+                <a href="/#projects">Work</a>
+                <a href="mailto:info@decoded.ltd" class="nav-contact">Get in Touch</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="case-hero">
+        <div class="case-hero-bg" aria-hidden="true"></div>
+        <div class="container">
+            <div class="case-hero-content fade-in">
+                <a href="/" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    All Projects
+                </a>
+                <div class="case-hero-logo">
+                    <img src="assets/vaya/icon.png" alt="Vaya App Icon">
+                </div>
+                <div class="case-tags">
+                    <span class="tag">Mobile App</span>
+                    <span class="tag">iOS &amp; Android</span>
+                    <span class="tag">Travel &amp; Discovery</span>
+                    <span class="tag">Maps</span>
+                </div>
+                <h1>Vaya</h1>
+                <p class="case-subtitle">Go somewhere. Do something. Vaya helps you discover the best things to do around you across South Africa — from local markets and live events to outdoor adventures and hidden gems.</p>
+                <div class="store-badges">
+                    <a href="#" class="store-badge" target="_blank" rel="noopener noreferrer" aria-label="Download Vaya on the App Store">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.23 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.02 2.29-1.27 3.15-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.04-2.75-4.13zM14.5 4.5c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44z"/></svg>
+                        <span class="store-badge-text"><small>Download on the</small><strong>App Store</strong></span>
+                    </a>
+                    <a href="#" class="store-badge" target="_blank" rel="noopener noreferrer" aria-label="Get Vaya on Google Play">
+                        <svg width="20" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1L13 12.1v-.2L3.7 2.2l-.1.1z" fill="#00d2ff"/><path d="M16.3 15.2l-3.3-3.1v-.2l3.3-3.1.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.2-.1-.3z" fill="#ffce00"/><path d="M16.4 15.1L13 12 3.6 21.7c.4.4 1 .4 1.7.1l11.1-6.3" fill="#ff3b30"/><path d="M16.4 8.9L5.3 2.6c-.7-.4-1.3-.3-1.7.1L13 12l3.4-3.1z" fill="#00e676"/></svg>
+                        <span class="store-badge-text"><small>Get it on</small><strong>Google Play</strong></span>
+                    </a>
+                </div>
+                <a href="vaya-legal.html" class="case-terms-link">View Privacy Policy &amp; Terms &rarr;</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview -->
+    <section class="case-section">
+        <div class="container case-container">
+            <div class="case-overview reveal">
+                <div class="overview-stat">
+                    <strong>All 9</strong>
+                    <span>SA Provinces</span>
+                </div>
+                <div class="overview-sep"></div>
+                <div class="overview-stat">
+                    <strong>10+</strong>
+                    <span>Categories</span>
+                </div>
+                <div class="overview-sep"></div>
+                <div class="overview-stat">
+                    <strong>4</strong>
+                    <span>Budget Tiers</span>
+                </div>
+                <div class="overview-sep"></div>
+                <div class="overview-stat">
+                    <strong>ZAR</strong>
+                    <span>Local Pricing</span>
+                </div>
+            </div>
+
+            <div class="case-body">
+                <div class="case-intro reveal">
+                    <h2>The Idea</h2>
+                    <p>There's always something to do — you just can't always find it. Events, markets, restaurants and outdoor spots are scattered across a dozen apps, social feeds and word of mouth. Planning a weekend, a date night, or a family day out turns into endless scrolling with nothing to show for it.</p>
+                    <p>Vaya brings it all together in one beautifully simple app, tuned to where you are in South Africa. Browse a photo-led feed, filter by exactly what you're in the mood for, see it on a map, save what you love, and share the plan — all in a few taps.</p>
+                </div>
+
+                <!-- Discover -->
+                <div class="case-feature has-screenshot reveal">
+                    <div class="case-feature-content">
+                        <div class="case-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                        </div>
+                        <span class="case-feature-label">Discover</span>
+                        <h3>Discover Your Backyard</h3>
+                        <p>A gorgeous, photo-led feed of experiences tailored to where you are — so you always know what's worth your time, right now.</p>
+                        <ul class="feature-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Happening this weekend</strong> — what's on right now, wherever you are.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Near you</strong> — experiences within reach, sorted by distance.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Hidden gems</strong> — local spots you'd never find otherwise.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case-screenshot">
+                        <img src="assets/vaya/screenshots/vaya-01-discover.png" alt="Vaya — Discover your backyard">
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="case-feature has-screenshot image-left reveal">
+                    <div class="case-feature-content">
+                        <div class="case-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                        </div>
+                        <span class="case-feature-label">Search &amp; Filter</span>
+                        <h3>Filter by Your Vibe</h3>
+                        <p>Find exactly what you feel like doing. Search by name, then narrow it down by category, budget, distance and date — all in one flow.</p>
+                        <ul class="feature-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Categories</strong> — food, outdoors, culture, wildlife, markets, family and more.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Budget tiers</strong> — free, R, RR or RRR to match your plans.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Distance &amp; date</strong> — free and family-friendly this Saturday is three taps away.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case-screenshot">
+                        <img src="assets/vaya/screenshots/vaya-03-filters.png" alt="Vaya — Filter by your vibe">
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="case-feature has-screenshot reveal">
+                    <div class="case-feature-content">
+                        <div class="case-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <span class="case-feature-label">Map View</span>
+                        <h3>Explore on the Map</h3>
+                        <p>Switch to the map to see experiences pinned around you, colour-coded by type, with quick details for each spot — perfect for finding something close by while you're out and about.</p>
+                        <ul class="feature-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Location pins</strong> colour-coded by category for instant scanning.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Quick details</strong> on tap, with one-tap directions to get there.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>What's nearby</strong> so you can make a whole day of it.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case-screenshot">
+                        <img src="assets/vaya/screenshots/vaya-04-map.png" alt="Vaya — Find plans faster on the map">
+                    </div>
+                </div>
+
+                <!-- Save & Share -->
+                <div class="case-feature has-screenshot image-left reveal">
+                    <div class="case-feature-content">
+                        <div class="case-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </div>
+                        <span class="case-feature-label">Save &amp; Share</span>
+                        <h3>Save What You Love</h3>
+                        <p>Tap the heart to save the places you love and group them into collections — then share a single experience or a whole plan with friends and family in a tap.</p>
+                        <ul class="feature-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Collections</strong> like "Date night ideas", "Weekend away" or "Kids' day out".</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>One-tap sharing</strong> — friends open the plan and see exactly what you mean.</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span><strong>Browse as a guest</strong>, or sign in to sync your saves across devices.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case-screenshot">
+                        <img src="assets/vaya/screenshots/vaya-05-collections.png" alt="Vaya — Save what you love">
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="case-features-grid reveal">
+                    <h2>Key Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                            Personalised Feed
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            Search &amp; Filters
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Interactive Map
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            Save Favourites
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                            Share Plans
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            Collections
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            Made for SA
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            Pricing in ZAR
+                        </div>
+                        <div class="feature-chip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                            Light &amp; Dark Mode
+                        </div>
+                    </div>
+
+                    <div class="screenshot-grid" style="margin-top: 2.5rem;">
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-01-discover.png" alt="Vaya Screen 1 — Discover your backyard">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-02-region.png" alt="Vaya Screen 2 — Choose a region">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-03-filters.png" alt="Vaya Screen 3 — Smart filters">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-04-map.png" alt="Vaya Screen 4 — Find plans faster">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-05-collections.png" alt="Vaya Screen 5 — Save collections">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-06-share.png" alt="Vaya Screen 6 — Share the plan">
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="assets/vaya/screenshots/vaya-07-search.png" alt="Vaya Screen 7 — Local search">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Vaya -->
+                <div class="case-why reveal">
+                    <h2>Why Vaya?</h2>
+                    <p>Generic listing apps treat everywhere the same. Vaya is built for South Africa — local cities and regions, prices in Rands, and experiences that celebrate everything there is to explore, from markets and museums to beaches, mountains, winelands and wildlife.</p>
+                    <p>Stop scrolling endlessly and start exploring. Whether it's a weekend, a date night or a family day out, Vaya turns "there's nothing to do" into your next adventure.</p>
+                    <a href="vaya-legal.html" class="btn btn-ghost" style="margin-top: 1rem;">View Privacy Policy &amp; Terms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="container">
+            <div class="cta-inner reveal">
+                <h2>Ready to build<br>something great?</h2>
+                <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+                <a href="mailto:info@decoded.ltd" class="btn btn-primary btn-lg">Let's Talk &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/"><img src="img/banner_logo.PNG" alt="Decoded Lemon"></a>
+                    <p>Software development studio crafting products for the modern web and mobile era.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="/#expertise">Services</a>
+                    <a href="/#projects">Work</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/decodedlemon" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="mailto:info@decoded.ltd">Email</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="chore-equity-terms.html">ChoreEquity Terms</a>
+                    <a href="papadipark-legal.html">PapadiPark Privacy &amp; Terms</a>
+                    <a href="slingshot_privacy.html">Slingshot Defender Privacy</a>
+                    <a href="homecell-privacy.html">HomeCellConnect Privacy</a>
+                    <a href="outtastock-privacy.html">OuttaStock Privacy</a>
+                    <a href="vaya-legal.html">Vaya Privacy &amp; Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Decoded Lemon. All rights reserved.</p>
+                <p class="footer-contact">info@decoded.ltd &middot; +27 75 328 1424</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
