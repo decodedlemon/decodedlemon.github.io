@@ -7,33 +7,61 @@
     <link rel="stylesheet" href="css/modern.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .legal-hero {
+            padding: 8rem 0 4rem;
+            background: var(--bg-2);
+            border-bottom: 1px solid var(--border);
+        }
+        .legal-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+        .legal-hero h1 span { color: var(--accent); }
+        body.dark-mode .legal-hero h1 span { color: #ccff00; }
+        .legal-hero p { color: var(--text-2); margin-top: 0.5rem; }
+        .legal-body { padding: 5rem 0; }
+        .legal-body .content-wrapper { max-width: 760px; }
+        .legal-body h2 { font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 0.75rem; color: var(--text); }
+        .legal-body p, .legal-body li { color: var(--text-2); line-height: 1.8; margin-bottom: 1rem; }
+        .legal-body ul { padding-left: 1.5rem; }
+        .legal-body a { color: var(--accent); }
+        body.dark-mode .legal-body a { color: #ccff00; }
+        .legal-body .last-updated { display: inline-block; background: var(--bg-3); border: 1px solid var(--border); border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: var(--text-2); padding: 0.3rem 0.9rem; margin-bottom: 0; }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container">
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
             <a href="/" class="brand">
-                <img src="img/banner_logo.PNG" alt="Decoded Lemon Logo">
+                <img src="img/banner_logo.PNG" alt="Decoded Lemon">
             </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/#expertise">Expertise</a>
-                <a href="/#projects">Projects</a>
-                <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+            <div class="nav-links" id="nav-links">
+                <a href="/#expertise">Services</a>
+                <a href="/#projects">Work</a>
+                <a href="mailto:info@decoded.ltd" class="nav-contact">Get in Touch</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <header class="hero" style="height: 40vh; background: var(--section-alt);">
+    <header class="legal-hero">
         <div class="container">
             <h1>Terms of <span>Service</span></h1>
-            <p>Last Updated: May 29, 2026</p>
+            <h2 style="font-size: 1.1rem; font-weight: 500; color: var(--text-2); margin-bottom: 0.75rem;">Family Equity App</h2>
+            <p class="last-updated">Last Updated: May 29, 2026</p>
         </div>
     </header>
 
-    <main class="content-section">
+    <main class="legal-body">
         <div class="container">
             <div class="content-wrapper">
                 <p>Welcome to Family Equity ("the App"). These Terms and Conditions ("Terms") govern your access to and use of the mobile application, services, and backend systems provided by Family Equity ("we," "us," or "our").</p>
@@ -58,9 +86,9 @@
                 <h2>4. Acceptable Use and Restrictions</h2>
                 <p>You agree that you will not:</p>
                 <ul>
-                    <li style="color: var(--text-muted); margin-bottom: 1rem;">Reverse engineer, decompile, or attempt to extract the source code of the App.</li>
-                    <li style="color: var(--text-muted); margin-bottom: 1rem;">Exploit the Supabase real-time API or database network endpoints using automated scripts, bots, or unauthorized scrapers.</li>
-                    <li style="color: var(--text-muted); margin-bottom: 1rem;">Use the App to transmit, store, or log abusive, unlawful, or defamatory text descriptions within your household chore lists.</li>
+                    <li>Reverse engineer, decompile, or attempt to extract the source code of the App.</li>
+                    <li>Exploit the Supabase real-time API or database network endpoints using automated scripts, bots, or unauthorized scrapers.</li>
+                    <li>Use the App to transmit, store, or log abusive, unlawful, or defamatory text descriptions within your household chore lists.</li>
                 </ul>
 
                 <h2>5. Limitation of Liability and "As-Is" Disclaimer</h2>
@@ -78,10 +106,10 @@
 
                 <h2>9. Contact Us</h2>
                 <p>If you have any questions, bug reports, or legal inquiries regarding these Terms, please contact us at:</p>
-                <p>Email: <a href="mailto:chore-equity@decoded.ltd" style="color: var(--primary-color);">chore-equity@decoded.ltd</a></p>
+                <p>Email: <a href="mailto:chore-equity@decoded.ltd">chore-equity@decoded.ltd</a></p>
 
                 <div style="margin-top: 3rem;">
-                    <a href="chore-equity.html" class="btn">Back to Family Equity</a>
+                    <a href="chore-equity.html" class="btn btn-ghost">&larr; Back to Family Equity</a>
                 </div>
             </div>
         </div>
@@ -89,24 +117,39 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="img/banner_logo.PNG" alt="Decoded Lemon Logo">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/"><img src="img/banner_logo.PNG" alt="Decoded Lemon"></a>
+                    <p>Software development studio crafting products for the modern web and mobile era.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="https://www.instagram.com/decodedlemon">Instagram</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="/#expertise">Services</a>
+                    <a href="/#projects">Work</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.instagram.com/decodedlemon" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="mailto:info@decoded.ltd">Email</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
                     <a href="chore-equity-terms.html">Family Equity Terms</a>
+                    <a href="papadipark-legal.html">PapadiPark Privacy &amp; Terms</a>
+                    <a href="slingshot_privacy.html">Slingshot Defender Privacy</a>
+                    <a href="homecell-privacy.html">HomeCellConnect Privacy</a>
+                    <a href="outtastock-privacy.html">OuttaStock Privacy</a>
+                    <a href="vaya-legal.html">Vaya Privacy &amp; Terms</a>
                 </div>
-                <div class="footer-contact">
-                    <p>info@decoded.ltd</p>
-                    <p>+27 75 328 1424</p>
-                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Decoded Lemon. All rights reserved.</p>
+                <p class="footer-contact">info@decoded.ltd &middot; +27 75 328 1424</p>
             </div>
         </div>
     </footer>
 
     <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

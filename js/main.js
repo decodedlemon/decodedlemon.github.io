@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 // Scroll reveal
 const revealEls = document.querySelectorAll('.reveal');
 if (revealEls.length) {
