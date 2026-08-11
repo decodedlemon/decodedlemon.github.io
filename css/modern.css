@@ -808,7 +808,8 @@ html.js .reveal.visible {
 
     .nav-links {
         position: fixed;
-        top: var(--nav-h); right: 0; bottom: 0;
+        top: var(--nav-h); right: 0;
+        height: calc(100vh - var(--nav-h));
         width: min(300px, 78vw);
         background: var(--bg);
         flex-direction: column;
@@ -822,6 +823,7 @@ html.js .reveal.visible {
         z-index: 199;
         display: flex;
         box-shadow: -8px 0 40px rgba(0,0,0,0.1);
+        overflow-y: auto;
     }
     .nav-links.open { transform: translateX(0); }
     .nav-links a {
