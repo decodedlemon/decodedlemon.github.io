@@ -32,6 +32,8 @@ if (menuBtn && navLinks) {
     menuBtn.addEventListener('click', () => {
         const isOpen = navLinks.classList.toggle('open');
         menuBtn.classList.toggle('open', isOpen);
+        menuBtn.setAttribute('aria-expanded', String(isOpen));
+        menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
         document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
@@ -39,6 +41,8 @@ if (menuBtn && navLinks) {
         link.addEventListener('click', () => {
             navLinks.classList.remove('open');
             menuBtn.classList.remove('open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.setAttribute('aria-label', 'Open menu');
             document.body.style.overflow = '';
         });
     });
@@ -47,6 +51,8 @@ if (menuBtn && navLinks) {
         if (!navbar?.contains(e.target) && navLinks.classList.contains('open')) {
             navLinks.classList.remove('open');
             menuBtn.classList.remove('open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.setAttribute('aria-label', 'Open menu');
             document.body.style.overflow = '';
         }
     });
