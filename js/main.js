@@ -57,3 +57,31 @@ if (menuBtn && navLinks) {
         }
     });
 }
+
+// Selected Work — collapsed until "View all projects"
+const projectsToggle = document.getElementById('projects-toggle');
+const projectsGrid   = document.getElementById('all-projects');
+
+if (projectsToggle && projectsGrid) {
+    const toggleLabel = projectsToggle.querySelector('.projects-toggle-label');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const setExpanded = (expanded) => {
+        projectsGrid.classList.toggle('is-collapsed', !expanded);
+        projectsToggle.setAttribute('aria-expanded', String(expanded));
+        if (toggleLabel) toggleLabel.textContent = expanded ? 'Show fewer projects' : 'View all projects';
+        if (expanded) {
+            projectsGrid.querySelectorAll('.project-extra.reveal').forEach(el => el.classList.add('visible'));
+        }
+    };
+
+    projectsToggle.addEventListener('click', () => {
+        const expanded = projectsGrid.classList.contains('is-collapsed');
+        setExpanded(expanded);
+        if (!expanded) {
+            projectsToggle.scrollIntoView({ block: 'center', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+        }
+    });
+
+    if (window.location.hash === '#all-projects') setExpanded(true);
+}

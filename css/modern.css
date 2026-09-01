@@ -185,6 +185,13 @@ body.dark-mode .project-index { color: var(--accent); }
 .project-link { display: inline-flex; align-items: center; gap: 7px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); font-size: 9px; font-weight: 750; }
 .project-link:hover { border-color: var(--accent); }
 
+/* Selected Work — collapsed until "View all projects" */
+.projects-toggle { display: inline-flex; align-items: center; gap: 7px; }
+.projects-toggle:hover { color: var(--text); }
+.projects-toggle-icon { display: inline-block; transition: transform var(--dur) var(--ease); }
+.projects-toggle[aria-expanded="true"] .projects-toggle-icon { transform: rotate(-90deg); }
+.js .projects-grid.is-collapsed .project-extra { display: none; }
+
 .services-section { background: var(--bg-2); border-block: 1px solid var(--border); }
 .services-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
 .service-card { position: relative; min-height: 190px; padding: 22px 18px; border-right: 1px solid var(--border); }
